@@ -112,7 +112,7 @@ console.log(textos)
 /*
 console.log(textos.join(" - "))
 */
-
+//ejemplo practico de arrays
 const listaNombres = []
 
 const eliminar = (nombre) =>{
