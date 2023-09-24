@@ -1,0 +1,14 @@
+#caja{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+#cargaProducto{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:10px;
+    margin: 10px auto;
+    border: 2px solid #000;
+}
