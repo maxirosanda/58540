@@ -1,11 +1,13 @@
 //Operadores avanzados
 
+/*
 let numero = 10
 //numero = numero + 1
-//numero += 1
-numero++
+numero += 5
+//numero++
 console.log(numero)
-
+*/
+/*
 // 1) Operador Ternario
 
 let temperatura = 35
@@ -60,7 +62,7 @@ console.log(usuario2?.cursos?.react || "no esta inscripto en este curso")
 console.log(usuario3?.cursos?.react || "no esta inscripto en este curso")
 console.log(usuario1?.cursos?.react || "no esta inscripto en este curso")
 console.log(usuario4?.cursos?.react || "no esta inscripto en este curso")
-
+*/
 //--------------------------------------------------------
 //Desestructuracion
 const usuario5 = {
@@ -73,13 +75,12 @@ const usuario5 = {
     }
 }
 
-let {nombre:nombreUsuario,edad,telefono,cursos:{javascript},cursos:{dw}} = usuario5
-
+let {nombre:nombreUsuario,edad,cursos:{javascript,dw,react}} = usuario5
+console.log(dw)
 console.log(nombreUsuario)
 console.log(edad)
-console.log(telefono)
 console.log(javascript)
-console.log(dw)
+
 
 // Desestructuración en parámetros
 const usuario6 = {
@@ -92,7 +93,7 @@ const usuario6 = {
     }
 }
 
-const mostrarUsuario = ({nombre,edad,cursos:{javascript},cursos:{dw}}) => {
+const mostrarUsuario = ({nombre,edad,cursos:{javascript,dw}}) => {
     alert(`
             Nombre: ${nombre}
             Edad: ${edad}
@@ -108,3 +109,48 @@ mostrarUsuario(usuario6)
 const nombres = ["jose","estela","martin"]
 
 const [a,,c] = nombres
+
+// spread con arrays
+const numeros = [12,34,543,565,44]
+const numeros2 = [...numeros] //hacer una copia del array (sin que queden vinculados)
+numeros2[1] = 54
+console.log(numeros)
+
+console.log(Math.max(...numeros)) //para usar metodos que reciben multiples parametros
+const numeros3 = [344,654,45,34,23,434]
+const numerosUnidos = [...numeros,...numeros3] //Unir arrays
+
+const objetoNumeros = { //convertir un array en objeto
+    ...numeros
+}
+console.log(objetoNumeros)
+
+//spread con objetos
+
+const producto = {
+    nombres:"coca cola",
+    precio:980,
+    stock:12
+}
+
+
+const productoExtendido = {
+    ...producto,
+    precio:1000,
+    descripcion:"jdshgjas kjldflasifj lkjdsfis"
+}
+console.log(producto)
+console.log(productoExtendido)
+
+// rest parameters
+
+const mostrar = (...textos) =>{
+    console.log(...textos)
+}
+mostrar("hola","maxi","chau","bienvenido","dfsjdklgh")
+
+const sumar = (...numeros) =>{
+    return numeros.reduce((acc,numero)=>acc + numero,0)
+}
+
+console.log(sumar(145,566,435,665,3455,6655,34,3535,44,6556,3454))
