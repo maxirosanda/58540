@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="crearPost">
+        <h2>Crear Post</h2>
+        <input type="text" placeholder="Ingrese titulo" name="title" required>
+        <input type="text" placeholder="Ingrese contenido del post" name="body" required>
+        <button type="submit">Crear Post</button>
+    </form>
+    <form id="actualizarPost">
+        <h2>Actualizar Post</h2>
+        <input type="number" name="id" placeholder="Ingrese id a actualizar" required>
+        <input type="text" placeholder="Ingrese titulo" name="title" required>
+        <input type="text" placeholder="Ingrese contenido del post" name="body" required>
+        <button type="submit">Actualizar Post</button>
+    </form>
+    <button id="btnTraerPosts">Traer Posts</button>
+    <form id="buscarPost">
+        <input type="number" placeholder="ingrese Numero de Post" min="1" max="100" required>
+        <button type="submit">Traer Post</button>
+    </form>
+    <div id="contenedorPosts">
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
