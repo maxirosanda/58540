@@ -1,0 +1,67 @@
+[
+    {
+        "titulo": "Playa Tropical",
+        "descripcion": "Arena blanca y aguas cristalinas bajo un cielo despejado.",
+        "imagen": "./img/carousel/paisaje1.jpg"
+    },
+    {
+        "titulo": "Montañas Verdes",
+        "descripcion": "Colinas cubiertas de vegetación con un río serpenteante.",
+        "imagen": "./img/carousel/paisaje2.jpg"
+    },
+    {
+        "titulo": "Atardecer en el Desierto",
+        "descripcion": "Dunas de arena iluminadas por los últimos rayos de sol.",
+        "imagen": "./img/carousel/paisaje3.jpg"
+    },
+    {
+        "titulo": "Bosque Encantado",
+        "descripcion": "Árboles altos y misteriosos con un suelo cubierto de musgo.",
+        "imagen": "./img/carousel/paisaje4.jpg"
+    },
+    {
+        "titulo": "Ciudad junto al Mar",
+        "descripcion": "Rascacielos junto a un puerto lleno de barcos.",
+        "imagen": "./img/carousel/paisaje5.jpg"
+    },
+    {
+        "titulo": "Cascada Escondida",
+        "descripcion": "Agua cayendo en una piscina natural rodeada de rocas.",
+        "imagen": "./img/carousel/paisaje6.jpg"
+    },
+    {
+        "titulo": "Vista desde la Montaña",
+        "descripcion": "Panorama impresionante desde la cima de una montaña.",
+        "imagen": "./img/carousel/paisaje7.jpg"
+    },
+    {
+        "titulo": "Pueblo en el Valle",
+        "descripcion": "Casas tradicionales en un valle rodeado de colinas.",
+        "imagen": "./img/carousel/paisaje8.jpg"
+    },
+    {
+        "titulo": "Lago Sereno",
+        "descripcion": "Aguas tranquilas reflejando un cielo azul claro.",
+        "imagen": "./img/carousel/paisaje9.jpg"
+    },
+    {
+        "titulo": "Aurora Boreal",
+        "descripcion": "Luces danzantes en el cielo del Ártico.",
+        "imagen": "./img/carousel/paisaje10.jpg"
+    },
+    {
+        "titulo": "Jardín Japonés",
+        "descripcion": "Puentes arqueados sobre estanques llenos de nenúfares.",
+        "imagen": "./img/carousel/paisaje11.jpg"
+    },
+    {
+        "titulo": "Ruinas Antiguas",
+        "descripcion": "Misteriosas ruinas de una civilización olvidada.",
+        "imagen": "./img/carousel/paisaje12.jpg"
+    },
+    {
+        "titulo": "Parque Nacional",
+        "descripcion": "Bosques densos y senderos sinuosos para explorar.",
+        "imagen": "./img/carousel/paisaje13.jpg"
+    }
+]

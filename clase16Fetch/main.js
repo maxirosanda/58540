@@ -1,11 +1,10 @@
 
 // Traer todos los post
 const btnTraerPosts = document.getElementById("btnTraerPosts")
-btnTraerPosts.addEventListener("click",()=>{
-    fetch("https://jsonplaceholder.typicode.com/posts")
-    .then(response=> response.json())
-    .then((posts)=>{
-        const contenedorPosts = document.getElementById("contenedorPosts")
+btnTraerPosts.addEventListener("click", async ()=>{
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts")
+    const posts = await response.json()
+    const contenedorPosts = document.getElementById("contenedorPosts")
         posts.forEach(post => {
             const tarjetaPost = document.createElement("div")
             tarjetaPost.className = "tarjetaPost"
@@ -15,11 +14,6 @@ btnTraerPosts.addEventListener("click",()=>{
                                 `
         contenedorPosts.append(tarjetaPost)
         })
-    })
-    .catch((error)=>{
-        alert("no se pudo acceder a los posts")
-        console.log(error)
-    })
 })
 // Buscar Post
 const buscarPost = document.getElementById("buscarPost")
@@ -84,12 +78,21 @@ fetch('https://jsonplaceholder.typicode.com/posts/1', {
   method: 'DELETE',
 });
 
+/*
 fetch("./data.json")
 .then(response => response.json())
 .then(data => {
     console.log(data)
+}).catch((error)=>{
+    alert("Error: " + error)
 })
+*/
 
-
+const pedirDatos = async () =>{
+    const response = await fetch("./data.json")
+    const data = await response.json()
+    console.log(data)
+}
+pedirDatos()
 
 
